@@ -10,7 +10,10 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/googletest/include)
 
 include_directories(../src/header)
 
-add_executable(SwordToOfferTest test_main.cpp ../src/TreeRelated.cpp)
+add_executable(SwordToOfferTest
+    test_main.cpp
+    SumTest.cpp
+)
 target_link_libraries(SwordToOfferTest PRIVATE gtest gtest_main)
 
 

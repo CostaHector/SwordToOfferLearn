@@ -1,18 +1,14 @@
-﻿#include <cstdio>
-#include "Others.h"
+﻿#include "Others.h"
 #include "gtest/gtest.h"
 
-class QueueTestSmpl3 : public testing::Test {
-  void SetUp() override {
-  }
+class MainTest : public testing::Test {
+
 };
 
-TEST_F(QueueTestSmpl3, f42_ok) {
+TEST_F(MainTest, f42_ok) {
   EXPECT_EQ(f42(), 42);
 }
 
-TEST_F(QueueTestSmpl3, nok) {
-  EXPECT_EQ(1, 2);
-  EXPECT_EQ(2, 1);
+TEST_F(MainTest, nok) {
+  EXPECT_TRUE(1 > 2);
 }
-
