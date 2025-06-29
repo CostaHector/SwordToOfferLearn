@@ -4,13 +4,15 @@ project(SwordToOffer)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(GOOGLETEST_VERSION "1.14.0")
+set(SRV_SRC_CPP
+    main.cpp
+    src/TreeRelated.cpp)
+set(SRV_HEADER_PATH
+    src/header
+)
 
-include_directories(src/header)
-
-
-add_executable(SwordToOffer main.cpp src/TreeRelated.cpp)
-
-target_sources(SwordToOffer PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src/header/Others.h)
+add_subdirectory(testcase)
+add_executable(SwordToOffer ${SRV_SRC_CPP})
+target_include_directories(SwordToOffer PUBLIC ${SRV_HEADER_PATH})
 
 

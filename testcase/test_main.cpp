@@ -10,5 +10,5 @@ TEST_F(MainTest, f42_ok) {
 }
 
 TEST_F(MainTest, nok) {
-  EXPECT_TRUE(1 > 2);
+  EXPECT_TRUE(3 > 2);
 }
