@@ -1,4 +1,5 @@
 ﻿#include "gtest/gtest.h"
+#include <climits>
 
 int MySum(int a, int b) {
   return a + b;
