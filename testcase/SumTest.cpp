@@ -11,6 +11,10 @@ class SumTest : public testing::Test {
 };
 
 TEST_F(SumTest, positive_negative_ok) {
+  int i = 1 + 2;
+  int j = i * i;
+  printf("123\n");
+  EXPECT_EQ(1, 1);
   EXPECT_EQ(MySum(1, -1), 0);
 }
 

@@ -1,4 +1,4 @@
-﻿#include "header/Others.h"
+﻿#include "Others.h"
 
 int f42() {
   return 42;
